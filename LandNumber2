@@ -1,0 +1,6 @@
+public class LandNumber2 {
+ public static void main(String[] args) {
+  int randNumber, sum=0;
+  for(int i=1; i<=100; i++) {   randNumber=(int)(Math.random()*100);   System.out.println(i+"번째 수"+randNumber);   sum+=randNumber;  }  System.out.println("총합은"+sum);
+ }
+}
