@@ -1,0 +1,4 @@
+public class TestInt3 {
+ public static void main(String[] args) {  double radius, area;  radius  = 5.0E+20f;  area = 3.141592E+20F * radius * radius;  System.out.println("원의 면적은 : "+area);  
+ }
+}
