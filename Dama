@@ -1,0 +1,5 @@
+import java.util.*;public class Dama {
+ public static void main(String[] args) {  int input=0;  Scanner scan = new Scanner(System.in);    do {   System.out.println("다마고치 관리메뉴 \n 1.놀아주기 \n 2. 밥주기 \n 3. 재우기 \n 4. 운동하기 \n 5. 종료하기");   System.out.print("번호를 선택하시오: ");   input=scan.nextInt();
+   if((input<1)||(input>5)) {    System.out.println("잘못선택했어요 !!");    System.out.println(" ");   }
+  } while((input<1)||(input>5));    switch(input) {  case 1:  System.out.println("놀자 놀자 뭐하고 놀까"); break;  case 2:  System.out.println("오늘 밥 메뉴는 뭐야?"); break;  case 3:  System.out.println("zzzzzzzzz"); break;  case 4:  System.out.println("운동해야지~"); break;  case 5:  System.out.println("끝"); break;  }
+  }}
