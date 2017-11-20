@@ -1,0 +1,5 @@
+public class Dice2 {
+  public static void main(String[] args) {     int num; final int SIZE = 6; int freq[] = new int[SIZE];
+ for (int i = 0; i < 10000; i++) {  num=(int)(Math.random() * SIZE);     freq[num]++; }
+ System.out.println("===================="); System.out.println("\t"+"면"+"\t"+"빈도"); System.out.println("====================");
+ for (int i = 0; i < SIZE; i++)  System.out.println("\t" + (i + 1) + "\t" + freq[i]);  }}
