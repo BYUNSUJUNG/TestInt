@@ -1,0 +1,8 @@
+import java.util.Scanner;
+public class MovieReservation4 {public static void main(String args[]) { final int size = 10; int[] seats = new int[size];
+ while (true) {  System.out.println("----------------------------");  for (int i = 0; i < size; i++)   System.out.print((i+1) + " ");  System.out.println("\n----------------------------");  for (int i = 0; i < size; i++)   System.out.print(seats[i] + " ");  System.out.println("\n----------------------------");
+  System.out.print("예약/취소 좌석번호를 입력하시오: ");  System.out.print("예: 3번 좌석예약 -> 103, 3번 좌석취소 -> 203: ");  Scanner scan = new Scanner(System.in);  int selectedAction, selectedSeat;  int s = scan.nextInt();    if(s<0) break; // "-1"이 아닌 다른 음수를 입력하면 계속 진행되어 밑 배열에 값이 들어가서 오류가 생김
+  selectedAction = s/100; //예약or 취소  selectedSeat = s%100; // 좌석번호 추출
+  if(selectedAction==1) {    if(seats[selectedSeat-1]==0)    seats[selectedSeat-1]=1;    else System.out.println("이미 예약되어 있는 자리입니다.");  }  else {    if(seats[selectedSeat-1]==1) {    seats[selectedSeat-1]=0;    System.out.println(selectedSeat+"가 최소됨");    }    else System.out.println("비어있는 자리입니다.");
+  }//end of if
+ }}}
