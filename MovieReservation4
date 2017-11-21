@@ -5,4 +5,5 @@ public class MovieReservation4 {public static void main(String args[]) { final 
   selectedAction = s/100; //예약or 취소  selectedSeat = s%100; // 좌석번호 추출
   if(selectedAction==1) {    if(seats[selectedSeat-1]==0)    seats[selectedSeat-1]=1;    else System.out.println("이미 예약되어 있는 자리입니다.");  }  else {    if(seats[selectedSeat-1]==1) {    seats[selectedSeat-1]=0;    System.out.println(selectedSeat+"가 최소됨");    }    else System.out.println("비어있는 자리입니다.");
   }//end of if
- }}}
+ }//end of while
+ }}
