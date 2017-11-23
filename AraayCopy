@@ -1,0 +1,11 @@
+public class AraayCopy {
+  public static void main(String[] args) {
+    int [] arr = {10, 20, 30, 40, 50};
+    int [] arr2;
+    arr2 = arr;
+    System.out.println(arr2[0]);
+    arr2[1] = 999;
+    System.out.println(arr[1];
+    System.out.println(arr2[1]);
+  }
+}
