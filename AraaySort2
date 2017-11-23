@@ -1,0 +1,13 @@
+import java.util.Arrays;
+public class AraaySort2 {
+  public static void main(String[] args) {
+    String[] word = {"사과", "배", "바나나", "복숭아", "딸기", "포도"};
+    System.out.print("최초의 리스트: ");
+    for(String r:  word)
+      System.out.print(r+" ");
+    Arrays.sort(word);
+    System.out.print("\n정렬된 리스트: ");
+    for(String r: word)
+      System.out.print(r+" ");
+  } 
+}
