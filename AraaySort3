@@ -1,0 +1,15 @@
+
+import java.util.Arrays;
+import java.util.Collections;
+public class AraaySort3 {
+  public static void main(String[] args) {
+    String[] word = {"사과", "배", "바나나", "복숭아", "딸기", "포도"};
+    System.out.print("최초의 리스트: "); 
+    for(String r:  word)
+      System.out.print(r+" ");
+    Arrays.sort(word,Collections.reverseOrder());
+    System.out.print("\n정렬된 리스트: ");
+    for(String r: word)
+      System.out.print(r+" ");
+  }
+}
