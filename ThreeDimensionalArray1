@@ -1,5 +1,5 @@
 import java.util.*;
-public class Araay {
+public class ThreeDimensionalArray1 {
   public static void main(String[] args) {
     int [][][] Student = new int [2][3][5];
     int point, sum=0;
@@ -7,7 +7,7 @@ public class Araay {
       for(int j=0; j<3; j++) {
         sum=0;
         for(int k=0; k<5; k++) {
-          point = (int)(Math.random()*100);
+          point = (int)(Math.random()*101);
           Student[i][j][k]=point;
           sum+=Student[i][j][k];
         }
