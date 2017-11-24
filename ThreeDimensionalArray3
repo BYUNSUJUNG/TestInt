@@ -1,4 +1,4 @@
-public class ArrayTest {
+public class ThreeDimensionalArray3  {
  public static void main(String[] args) {
    int[][] arr;
    int sum=0;
