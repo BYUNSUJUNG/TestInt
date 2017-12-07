@@ -1,0 +1,22 @@
+public class Dama {
+  int health;
+  String name;
+  double happy;
+  public int getHealth() {
+  return health;
+  } 
+  public void setHealth(int health) {
+  this.health = health;
+  } public String getName() {
+  return name;
+  }
+  public void setName(String name) {
+  this.name = name;
+  }
+  public double getHappy() {
+  return happy;
+  }
+  public void setHappy(double happy) {
+  this.happy = happy;
+  }
+}
