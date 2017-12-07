@@ -1,0 +1,11 @@
+public class MiniDamaTest {
+  public static void main(String[] args) {
+    Dama myDama = new Dama();
+    myDama.setHealth(10);
+    myDama.setHappy(3.5); 
+    myDama.setName("다마고찌");
+    System.out.println("행복지수: "+myDama.getHappy());
+    System.out.println("건강지수: "+myDama.getHealth()); 
+    System.out.println("이름: "+myDama.getName());
+  }
+}
