@@ -1,4 +1,4 @@
-public class Dama {
+public class MiniDama {
   int health;
   String name;
   double happy;
