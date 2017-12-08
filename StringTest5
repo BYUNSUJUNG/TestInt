@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class StringTest5 {
+ public static void main(String[] args) {
+   int selectedNum;
+   String str;
+   Scanner scan = new Scanner(System.in);
+   System.out.print("정수입력:  ");
+   str = scan.next(); 
+   selectedNum = Integer.parseInt(str);
+   System.out.println("입력된 숫자는: "+selectedNum);
+ }
+}
